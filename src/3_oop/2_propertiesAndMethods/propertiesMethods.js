@@ -1,14 +1,14 @@
 // Define an object with properties and methods
 const person = {
-    name: "John",
-    age: 30,
-    email: "john@example.com",
-    getFormattedName() {
-        return this.name.toUpperCase();
-    },
-    greet() {
-        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
-    }
+  name: "John",
+  age: 30,
+  email: "john@example.com",
+  getFormattedName() {
+    return this.name.toUpperCase();
+  },
+  greet() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  },
 };
 
 // Accessing properties and methods
