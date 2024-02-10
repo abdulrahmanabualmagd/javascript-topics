@@ -1,4 +1,4 @@
-import { Car } from "./car.js";
+import { Car } from "./class.js";
 
 // Inheritance (inherit from Car)
 class ElectricCar extends Car {
@@ -9,7 +9,6 @@ class ElectricCar extends Car {
     // Initialize base
     super(make, model);
 
-    // Initialize child
     this.capacity = capacity;
   }
 
@@ -19,8 +18,8 @@ class ElectricCar extends Car {
   }
 }
 
-let car = new Car('bmw', 2010)
+let car = new Car("bmw", 2010);
 
-let ecar = new ElectricCar('bmw', 2021, 4000);
+let ecar = new ElectricCar("bmw", 2021, 4000);
 ecar.cap();
 ecar.start();

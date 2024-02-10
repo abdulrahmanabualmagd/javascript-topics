@@ -1,5 +1,6 @@
 // Encapsulation
 export class Car {
+
   // Ctor
   constructor(make, model) {
     this.make = make;
@@ -18,13 +19,11 @@ export class Car {
   start() {
     console.log(`${this.make} ${this.model} is started`);
   }
-
-  stop() {
-    console.log(`${this.make} ${this.model} is stopped`);
-  }
 }
 
+// Instansiation
 const car = new Car("bmw", "2000");
+
 
 car.start();
 console.log(car.carmake)
