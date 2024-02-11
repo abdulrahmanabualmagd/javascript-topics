@@ -5,7 +5,7 @@ function Person(name, age) {
   this.age = age;
 }
 
-// instance member
+// instance member 
 Person.prototype.sayHello = function () {
   console.log("belongs to the instance");
 };
