@@ -10,7 +10,7 @@ let resetResult = await context.reset();
 let initResut = await context.init();
 
 // Add Data to [students]
-let addResult = await context.add("students", {name: "Abdulrahman"});
+let addResult = await context.add("students", { name: "Abdulrahman" });
 
 // Get All data in [students]
 let getAllResult = await context.getAll("students");
