@@ -1,5 +1,5 @@
 /*
- * - Lexical Scope:
+ * - Lexical Scope: 
 
  * - JavaScript uses lexical scoping, which means the scope of a variable is determined by its position within the source code.
 
