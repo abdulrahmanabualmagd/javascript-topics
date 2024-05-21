@@ -5,12 +5,12 @@ function Person(name, age) {
   this.age = age;
 }
 
-// instance member 
+// instance member (would be inherited to the childs only)
 Person.prototype.sayHello = function () {
   console.log("belongs to the instance");
 };
 
-// static method
+// static member (belongs to the Person only)
 Person.staticSayHello = function () {
   console.log("static belongs to the Prototype");
 };

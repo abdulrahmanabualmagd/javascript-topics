@@ -1,6 +1,6 @@
 // Number
-let integerNumber = 10;
-let floatingPointNumber = 3.14;
+let integerNumber = 10;             // Int
+let floatingPointNumber = 3.14;     // Float
 
 // String
 let singleQuotedString = 'Hello, world!';

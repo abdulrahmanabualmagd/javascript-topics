@@ -14,7 +14,7 @@ console.log(iterator.next()); // { value: 2, done: false }
 console.log(iterator.next()); // { value: 3, done: false }
 console.log(iterator.next()); // { value: undefined, done: true }
 
-// Reset Generator by recreate the iterator
+// Reset Generator by reassign the iterator
 iterator = generator();
 
 // get all (values) from the generator

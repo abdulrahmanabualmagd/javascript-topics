@@ -4,19 +4,23 @@
 // | Scope                | Function or global     | Block                  | Block                  |
 // | Reassignment         | Allowed                | Allowed                | Not allowed            |
 // | Redeclaration        | Allowed                | Not allowed            | Not allowed            |
-// | Hoisting             | Yes (only declaration) | Yes (declaration and   | Yes (declaration and   |
-// |                      |                        | initialization)        | initialization)        |
+// | Hoisting             | Yes (only declaration) | Yes declaration without| Yes declaration without|
+// |                      | Initialized (Undefined)| initialization)        | initialization)        |
 // ---------------------------------------------------------------------------------------------------
 
 // ---------------------------- [ Hoisting ] 
-// - var        // Only Declaration without initialization
-// - let        // Declaration and Initialization
-// - const      // The same as let [ Declaration and Initialization ]
+// - var        // Only Declaration without initialization (if we tried to use it before the actual declaration line it would be UNDEFINED)
+                // We can access the variable before the actual declaration line
+
+// - let        // Declaration and without initialization (if we tried to use it before the actual declaration line it would be [REFERENCE ERROR]!)
+                // We can't access the variable before the actual declaration line
+
+// - const      // The same as let [ Declaration and without Initialization (Not Accessible Before the Actual Line) ]
 
 // ------------------- [ Scope ] 
 
 // -                        var
-if (true){ var varItemInsideBlock = "var inside block"}         // Is global and we can see it outsite that block
+if (true){ var varItemInsideBlock = "var inside block"}         // Is global and we can see it outsite that block   
 console.log(varItemInsideBlock);
 
 // -                        let
