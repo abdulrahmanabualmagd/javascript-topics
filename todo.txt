@@ -1,0 +1,12 @@
+Closure and lexical
+
+node Events 
+like 'process.on('exit', function() {//do something before exit})
+this even is built-in in node 
+we can create our own custom event
+
+node file system
+
+node modules (commonjs) using require() function (out of support for es modules => import & export)
+
+express
