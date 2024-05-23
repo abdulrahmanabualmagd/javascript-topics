@@ -1,0 +1,31 @@
+// Project Initialization
+01. npx sequelize-cli init                    // Initializes a new project with necessary folders and files.
+02. npx sequelize-cli init:config             // Creates a new configuration file.
+03. npx sequelize-cli init:models             // Creates a new `models` folder and an example model.
+04. npx sequelize-cli init:migrations         // Creates a new `migrations` folder.
+05. npx sequelize-cli init:seeders            // Creates a new `seeders` folder.
+
+// Model Management
+06. npx sequelize-cli model:generate --name <modelName> --attributes <attr1:type1,attr2:type2,...>       // Generates a new model and its migration file.
+
+// Migration Management
+07. npx sequelize-cli migration:generate --name <migrationName>                 // Generates a new migration file.
+08. npx sequelize-cli migration:create --name <migrationName>                   // Creates a new migration file.
+09. npx sequelize-cli db:migrate                                                // Runs all pending migrations.
+10. npx sequelize-cli db:migrate:undo                                           // Reverts the last executed migration.
+11. npx sequelize-cli db:migrate:undo:all                                       // Reverts all executed migrations.
+12. npx sequelize-cli db:migrate:schema:timestamps:add                          // Adds timestamps to the schema for existing migrations.
+
+// Seed Management
+13. npx sequelize-cli seed:generate --name <seederName>                         // Generates a new seed file.
+14. npx sequelize-cli db:seed:all                                               // Runs all seed files.
+15. npx sequelize-cli db:seed --seed <seederName>                               // Runs a specific seed file.
+16. npx sequelize-cli db:seed:undo --seed <seederName>                          // Reverts a specific seed.
+17. npx sequelize-cli db:seed:undo:all                                          // Reverts all seed files.
+
+// Database Management
+18. npx sequelize-cli db:create                                                 // Creates the database specified in the configuration file.
+19. npx sequelize-cli db:drop                                                   // Drops the database specified in the configuration file.
+
+// Help
+20. npx sequelize-cli help                                                      // Displays a list of available commands and their usage.

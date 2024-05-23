@@ -18,7 +18,6 @@ Models can be defined in two equivalent ways in Sequelize:\
             {
                 // Model Options
                 tableName: 'custom_table_name',
-
             }
         )
 
@@ -47,3 +46,14 @@ Models can be defined in two equivalent ways in Sequelize:\
             timestamps: true,  // Enable timestamps
         }
         );
+
+
+sequelize.sync()
+    // Update database and synchronize the defined table with the configured database
+
+sequelize.drop({match: /_test$/});
+    // Drop tables starts with '_test....'
+
+### NOTE:   Sequelize, [inflection] refers to the automatic conversion of model names into table names and vice versa. By default, 
+            Sequelize uses a simple inflection rule to convert between singular and plural forms.
+            We can disable it by setting a [custom table name] or activate [freezeTableName] option
