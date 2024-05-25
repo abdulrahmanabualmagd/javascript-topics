@@ -1,31 +1,29 @@
-// Project Initialization
-01. npx sequelize-cli init                    // Initializes a new project with necessary folders and files.
-02. npx sequelize-cli init:config             // Creates a new configuration file.
-03. npx sequelize-cli init:models             // Creates a new `models` folder and an example model.
-04. npx sequelize-cli init:migrations         // Creates a new `migrations` folder.
-05. npx sequelize-cli init:seeders            // Creates a new `seeders` folder.
+Commands:
+    - npx sequelize init                              Initializes project
+    - npx sequelize init:config                       Initializes configuration
+    - npx sequelize init:migrations                   Initializes migrations
+    - npx sequelize init:models                       Initializes models
+    - npx sequelize init:seeders                      Initializes seeders
 
-// Model Management
-06. npx sequelize-cli model:generate --name <modelName> --attributes <attr1:type1,attr2:type2,...>       // Generates a new model and its migration file.
+    - npx sequelize db:create                         Create database specified by configuration
+    - npx sequelize db:drop                           Drop database specified by configuration
 
-// Migration Management
-07. npx sequelize-cli migration:generate --name <migrationName>                 // Generates a new migration file.
-08. npx sequelize-cli migration:create --name <migrationName>                   // Creates a new migration file.
-09. npx sequelize-cli db:migrate                                                // Runs all pending migrations.
-10. npx sequelize-cli db:migrate:undo                                           // Reverts the last executed migration.
-11. npx sequelize-cli db:migrate:undo:all                                       // Reverts all executed migrations.
-12. npx sequelize-cli db:migrate:schema:timestamps:add                          // Adds timestamps to the schema for existing migrations.
+    - npx sequelize db:migrate                        Run pending migrations
+    - npx sequelize db:migrate:schema:timestamps:add  Update migration table to have timestamps
+    - npx sequelize db:migrate:status                 List the status of all migrations
+    - npx sequelize db:migrate:undo                   Reverts a migration
+    - npx sequelize db:migrate:undo:all               Revert all migrations ran
 
-// Seed Management
-13. npx sequelize-cli seed:generate --name <seederName>                         // Generates a new seed file.
-14. npx sequelize-cli db:seed:all                                               // Runs all seed files.
-15. npx sequelize-cli db:seed --seed <seederName>                               // Runs a specific seed file.
-16. npx sequelize-cli db:seed:undo --seed <seederName>                          // Reverts a specific seed.
-17. npx sequelize-cli db:seed:undo:all                                          // Reverts all seed files.
+    - npx sequelize db:seed                           Run specified seeder
+    - npx sequelize db:seed:undo                      Deletes data from the database
+    - npx sequelize db:seed:all                       Run every seeder
+    - npx sequelize db:seed:undo:all                  Deletes data from the database
+    
+    - npx sequelize migration:generate                Generates a new migration file
+    - npx sequelize migration:create                  Generates a new migration file
 
-// Database Management
-18. npx sequelize-cli db:create                                                 // Creates the database specified in the configuration file.
-19. npx sequelize-cli db:drop                                                   // Drops the database specified in the configuration file.
-
-// Help
-20. npx sequelize-cli help                                                      // Displays a list of available commands and their usage.
+    - npx sequelize model:generate                    Generates a model and its migration
+    - npx sequelize model:create                      Generates a model and its migration
+    
+    - npx sequelize seed:generate                     Generates a new seed file
+    - npx sequelize seed:create                       Generates a new seed file
